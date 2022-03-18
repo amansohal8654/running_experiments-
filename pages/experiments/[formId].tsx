@@ -33,7 +33,7 @@ const createFormSchema = object({
 
 export type CreateFormInput = TypeOf< typeof createFormSchema>;
 
-function FormPage({query}){
+function FormPage({query} : {query: any}){
     const data =  ExperimentData.find(value => value.experiment.id === query.formId);
     const [questions, _] = useState(data);
 
@@ -86,7 +86,7 @@ function FormPage({query}){
     );
 }
 
-FormPage.getInitialProps = ({ query }) => {
+FormPage.getInitialProps = ({ query } : {query: any}) => {
     return { query }
 }
 
