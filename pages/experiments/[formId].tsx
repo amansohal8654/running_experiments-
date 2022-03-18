@@ -3,7 +3,7 @@ import {zodResolver} from '@hookform/resolvers/zod'
 import {object, string, TypeOf, array} from "zod";
 import { useState } from 'react';
 import  Link from "next/link"
-import ExperimentData from "../data"
+import ExperimentData from "../../data"
 
 
 const question = object({

@@ -1,4 +1,4 @@
-import ExperimentData from "../data"
+import ExperimentData from "../../data"
 import Link from 'next/link'
 
 
